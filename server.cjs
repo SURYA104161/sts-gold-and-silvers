@@ -3,7 +3,13 @@ const cors = require("cors");
 const { sendOrderNotification, initializeWhatsApp } = require("./whatsapp.cjs");
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: [
+    "https://stsgoldandsilvers.netlify.app",
+    "http://localhost:5173"
+  ],
+  credentials: true
+}));
 app.use(express.json());
 
 let client = null;

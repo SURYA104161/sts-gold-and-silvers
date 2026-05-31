@@ -208,6 +208,63 @@ select optgroup {
   box-sizing: border-box;
 }
 
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  min-width: 0;
+}
+
+button,
+input,
+textarea,
+select,
+optgroup,
+option {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+* {
+  word-break: break-word;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  .btn,
+  .order-button,
+  .nav-link.nav-button,
+  .nav-link,
+  .submit-review-btn,
+  .invoice-actions button {
+    width: 100%;
+  }
+
+  .container {
+    padding: 0 14px;
+  }
+}
+
 /* Breakpoints to use across the project */
 @media (max-width: 1200px) {
   .container { padding: 0 18px; }
