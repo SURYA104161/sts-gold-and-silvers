@@ -117,7 +117,7 @@ const ProductCard = ({ product }) => {
           )}
         </div>
 
-        <div className="product-buttons">
+        <div className="product-actions">
           <button className="compare-btn" onClick={handleCompareClick} aria-label="Compare product" title={isInCompare(product.id) ? "Remove from compare" : "Add to compare"}>
             {isInCompare(product.id) ? (
               <>
@@ -125,11 +125,13 @@ const ProductCard = ({ product }) => {
               </>
             ) : (
               <>
-                <FaBalanceScale /> Compare
+                ⚖ Compare
               </>
             )}
           </button>
-          <button className="view-btn" onClick={(e) => { e.stopPropagation(); navigate(`/product/${product.id}`); }}>View Details</button>
+          <button className="details-btn" onClick={(e) => { e.stopPropagation(); navigate(`/product/${product.id}`); }}>
+            Details
+          </button>
         </div>
 
         <div className="product-footer">

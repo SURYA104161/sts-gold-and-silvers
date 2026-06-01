@@ -1738,3 +1738,66 @@ body {
     padding: 20px;
   }
 }
+
+/* MOBILE GLOBAL FIX */
+
+*{
+  box-sizing:border-box;
+}
+
+html,body{
+  width:100%;
+  overflow-x:hidden;
+}
+
+img{
+  max-width:100%;
+  height:auto;
+}
+
+table{
+  display:block;
+  overflow-x:auto;
+}
+
+button{
+  max-width:100%;
+}
+
+@media screen and (max-width:768px){
+
+  .dashboard-container,
+  .admin-container{
+      width:100%;
+      padding:12px !important;
+  }
+
+  .cards-grid,
+  .stats-grid{
+      display:grid;
+      grid-template-columns:1fr !important;
+      gap:12px;
+  }
+
+  .tabs,
+  .button-group{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+  }
+
+  .card,
+  .product-card{
+      width:100% !important;
+      max-width:100%;
+  }
+
+  h1,h2,h3{
+      font-size:clamp(18px,5vw,30px);
+      word-break:break-word;
+  }
+
+  button{
+      width:100%;
+  }
+}
