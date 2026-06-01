@@ -1699,13 +1699,6 @@ body {
     flex: 1 1 auto;
   }
 
-    display: block;
-    font-weight: 700;
-    color: var(--text-secondary);
-    margin-bottom: 6px;
-    flex: 0 0 auto;
-  }
-
   .product-image-group {
     top: 0 !important;
     margin-top: 18px !important;
